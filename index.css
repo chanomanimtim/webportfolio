@@ -1,0 +1,36 @@
+* {
+    font-family: 'Mulish', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    background: -webkit-linear-gradient(to right, #0A1128, #001F54);
+    background: linear-gradient(to right, #0A1128, #001F54);
+}
+
+body {
+    background: #599fd9;
+    background: -webkit-linear-gradient(to right, #0A1128, #001F54);
+    background: linear-gradient(to right, #0A1128, #001F54);
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.separator {
+    margin: 3rem 0;
+    border-bottom: 1px dashed #fff;
+}
+
+.text-uppercase {
+    letter-spacing: 0.1em;
+}
+
+.text-gray {
+    color: #FEFCFB;
+}
+
+#languages-web {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Zilla Slab', serif;
+}
