@@ -3,7 +3,7 @@
 
 <head>
 
-    <title>Portfolio</title>
+    <title>My Portfolio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -23,29 +23,28 @@
 
     <!-- Animate CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
 </head>
 
 <body>
 
-    <!-- START OF NAV BAR -->
+    <!-- Start of nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar-main">
 
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <a class="navbar-brand" href="#">Portfolio</a>
+        <a class="navbar-brand" href="#"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
             <!-- ml-auto will push all the nav links to the right side of the webpage -->
-            <ul class="navbar-nav justify-content-center">
+            <ul class="navbar-nav justify-content-center nav-pills" id="nav-list">
                 <li class="nav-item active mx-1">
-                    <a class="nav-link " href="# ">Home <span class="sr-only ">(current)</span></a>
+                    <a class="nav-link" href="# ">Home <span class="sr-only ">(current)</span></a>
                 </li>
                 <li class="nav-item mx-2">
-                    <a class="nav-link " href="#about">About</a>
+                    <a class="nav-link" href="#about">About</a>
                 </li>
                 <li class="nav-item mx-2">
-                    <a class="nav-link " href="#gallery">Gallery</a>
+                    <a class="nav-link" href="#gallery-id">Gallery</a>
                 </li>
                 <li class="nav-item mx-2">
                     <a class="nav-link" href="#contact-form">Contact Me</a>
@@ -53,217 +52,160 @@
             </ul>
         </div>
     </nav>
+    <!-- end of nav bar -->
 
-    <!-- Home Content -->
 
-    <div class="text-center pt-5" id="landing-page">
-        <div class="text-white d-flex justify-content-center align-items-center flex-column">
-            <div class="mt-5 text-uppercase">
-                <p>Hi there! I'm</p>
-            </div>
-            <div class="h-25">
-                <h1 class="display-3 text-white animate__animated animate__bounceInUp" id="my-name">Chano Manimtim</h1>
-            </div>
-            <div class="h-25">
-                <p class="text-justify ">A FullStack Web Developer passionate about creating responsive and interactive web pages.
-                </p>
-            </div>
-            <div class="text-white p-3 d-flex justify-content-center align-items-center flex-row">
-                <div class="mr-5"><button type=" button " class="btn btn-primary btn-lg"><a href="https://drive.google.com/file/d/1KLacB1Y89mPmZG8n1jpu0kAdfq5m10Bp/view?usp=sharing" id="resume-link" target="_blank">Resumé</a></button></div>
-                <div class="ml-5 mr-3">
-                    <a href="https://www.facebook.com/chano.manimtim/" target="_blank"> <i class="fa-brands fa-facebook-square fa-2xl"></i></a>
-                </div>
-                <div class="mr-3">
-                    <a href="https://www.linkedin.com/in/christian-manimtim-9225a6139/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl "></i></a>
-                </div>
-                <div>
-                    <a href="https://gitlab.com/chanomanimtim" target="_blank"><i class="fa-brands fa-gitlab fa-2xl "></i></a>
+    <div class="container-fluid">
+        <!-- Start of home -->
+        <div class="text-center" id="landing-page">
+
+            <div class="">
+
+                <div class="">
+
+                    <h1 class="text-center display-4">Hi! I'm <span>Chano</span> Manimtim</h1>
+                    <p>A FullStack Web Developer passionate about creating responsive and interactive web pages.</p>
+                    <a href="https://drive.google.com/file/d/1KLacB1Y89mPmZG8n1jpu0kAdfq5m10Bp/view?usp=sharing" target="_blank"><button type="button" class="btn" id="btn-resume">Resume</button></a>
                 </div>
             </div>
+        </div>
 
-            <div class="jumbotron jumbotron-fluid my-5 text-dark pb-3 col-12 col-md-12" id="jumbotron-main ">
-                <div class="container animate__animated animate__backInDown">
-                    <h1 class="display-4 " id="languages-jumbotron ">Mongo DB, Express.js, React.js, Node.js</h1>
-                    <p class="lead ">Web developers design and build websites. They are typically responsible for the appearance, of the site and technical aspects, such as site speed and how much traffic the site can handle. Web developers may also create site content
+        <!-- end of home -->
+
+        <!-- Start of about -->
+
+        <div class="container mb-5" id="about">
+            <h1 class="text-center display-4">About me</h1>
+            <div class="row text-center">
+                <div class="col-md-6 pt-3 col-sm-12">
+                    <img class="rounded-circle" src="./images/chanoformalpic.png" width="250px">
+                </div>
+                <div class="col-md-6 pt-3 col-sm-12">
+
+                    <h3 class="text-center text-white">Chano Manimtim</h3>
+                    <p class="text-justify" id="p-about">I'm a FullStack Web Developer based from Philippines. I design & build user interfaces from small business sites to rich interactive web apps. I'm excited to work and continue refining my skills with the right company. Interested on
+                        working together? Fill out the form below and let's talk.</p>
+
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-6 col-sm-12">
+                    <img class="" src="./images/coding.png" width="250px">
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <h3 class="text-center text-white">What is a full stack developer?</h3>
+                    <p class="text-justify" id="p-about">Web developers design and build websites. They are typically responsible for the appearance, of the site and technical aspects, such as site speed and how much traffic the site can handle. Web developers may also create site content
                         that requires technical features. They are sometimes known as web designers or full-stack developers if they can do both front-end and back-end development.</p>
                 </div>
             </div>
         </div>
+
+
     </div>
+    <!-- end of about me -->
 
-    <!-- End of Home content -->
-
-
-    <!-- About me content -->
-
-    <div class="mt-3 mb-1 container text-center" id="about">
-        <div class="post-heading text-center ">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-12">
-                    <img src="images/chanoformalpic.png" class="img-fluid border border-white rounded-circle" id="chano-img">
-                </div>
-                <div class="col-lg-6 col-md-6 col-12 text-white ">
-                    <h1 class="pt-3 mt-3 display-4 text-uppercase">About Me</h1>
-                    <hr>
-                    <p class="text-justify ">I'm a FullStack Web Developer based from Philippines. I design & build user interfaces from small business sites to rich interactive web apps. I'm excited to work and continue refining my skills with the right company. Interested on
-                        working together? Fill out the form below and let's talk.
+    <!-- start of gallery -->
+    <div class="container-fluid text-light min-vh-100 p-3 p-md-5" id="gallery-id">
+        <h2 class="mb-3">Take a look</h2>
+        <h1 class="display-4">My</h1>
+        <h1 class="display-4">Skills</h1>
+        <div class="p-md-5 d-lg-flex justify-content-center">
+            <!-- HTML CARD -->
+            <div class="card col-xl-4 mb-4 mb-xl-0 m-1" id="card-id">
+                <div class="card-body">
+                    <img src="./images/htmllogo.png" class="card-img-top">
+                    <h5 class="card-title mt-3">HTML</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Programming Basics</h6>
+                    <p class="card-text">The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as
+                        JavaScript.
                     </p>
+                    <a href="https://html.com/" class="card-link" target="_blank">Link to Project</a>
                 </div>
             </div>
+            <!-- END OF HTML CARD -->
+            <!-- BOOSTRAP CARD-->
+            <div class="card col-xl-4 mb-4 mb-xl-0 m-1" id="card-id">
+                <div class="card-body">
+                    <img src="https://labs.tadigital.com/wp-content/uploads/2020/03/MicrosoftTeams-image.png" class="card-img-top">
+                    <h5 class="card-title mt-3">Bootstrap</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Rapid Prototyping</h6>
+                    <p class="card-text">is a potent front-end framework used to create modern websites and web apps. It's open-source and free to use, yet features numerous HTML and CSS templates for UI interface elements such as buttons and forms. Bootstrap also supports
+                        JavaScript extensions.
+                    </p>
+                    <a href="https://getbootstrap.com/" class="card-link" target="_blank">Link to Project</a>
+                </div>
+            </div>
+            <!-- END OF BS CARD -->
+            <!-- NODE JS CARD -->
+            <div class="card col-xl-4 mb-4 mb-xl-0 m-1" id="card-id">
+                <div class="card-body">
+                    <img src="./images/javascript-logo.png" class="card-img-top bg-white">
+                    <h5 class="card-title mt-3">Javascript</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Backend Basics</h6>
+                    <p class="card-text"> is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. As of 2022, 98% of websites use JavaScript on the client side for web page behavior, often incorporating third-party libraries.
+                    </p>
+                    <a href="https://html.com/" class="card-link" target="_blank">Link to Project</a>
+                </div>
+            </div>
+            <!-- END OF NODE JS CARD -->
         </div>
     </div>
 
-    <!-- GALLERY CONTENT -->
 
-    <div class="container mt-5 pt-2" id="gallery">
-        <div class="text-white">
-            <h2>Take a Look</h2>
-            <h1>My</h1>
-            <h1>Skills</h1>
-            <div class="row text-dark">
-                <div class="card col-lg-4 col-12 pt-5 order-1 order-sm-1 px-1 mb-2" style="width: 18rem; ">
-                    <img src="./images/htmllogo.png" class="card-img-top w-100 img-fluid" alt="... ">
-                    <div class="card-body ">
-                        <h5 class="card-title ">HTML</h5>
-                        <p class="card-text ">is the standard markup language for documents designed to be displayed in a web browser.</p>
-                        <a href="https://html.com/ " target="_blank " class="btn btn-primary ">Visit</a>
-                    </div>
-                </div>
-                <div class="card col-lg-4 col-12 pt-5 order-1 order-sm-1 px-5 mb-2" style="width: 18rem; ">
-                    <img src="./images/bootstrap-logo.png " class="card-img-top w-100" alt="... ">
-                    <div class="card-body ">
-                        <h5 class="card-title ">Bootstrap</h5>
-                        <p class="card-text ">is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. </p>
-                        <a href="https://getbootstrap.com/ " target="_blank " class="btn btn-primary ">Visit</a>
-                    </div>
-                </div>
-                <div class="card col-lg-4 col-12 pt-5 order-1 order-sm-1 px-1 mb-2" style="width: 18rem; ">
-                    <img src="./images/javascript-logo.png " class="card-img-top w-100 img-fluid" alt="... ">
-                    <div class="card-body ">
-                        <h5 class="card-title ">Javascript</h5>
-                        <p class="card-text ">is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS.</p>
-                        <a href="https://www.javascript.com/ " target="_blank " class="btn btn-primary ">Visit</a>
-                    </div>
-                </div>
-
+    <!-- start of contact me -->
+    <div class="container-fluid text-light text-center" id="contact-form">
+        <h3>Contact Me</h3>
+        <form class="container pb-2 col-12 col-md-8 col-xl-4" id="contact-elements">
+            <div class="form-group">
+                <label class="p-1">Name</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Your Name">
             </div>
-        </div>
+            <div class="form-group">
+                <label class="p-1">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="form-group">
+                <label class="p-1">Contact Number</label>
+                <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="+63 900 000 0000">
+            </div>
+            <div class="form-group">
+                <label class="p-1" for="exampleFormControlSelect1">Concern</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                <option>Inquiry</option>
+                <option>Quotation</option>
+                <option>Suggestions</option>
+                <option>Report a bug</option>
+              </select>
+            </div>
+            <div class="form-group">
+                <label class="p-1" for="exampleFormControlTextarea1">Message</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+            </div>
+            <button class="btn bg-dark text-center text-white" data-target="#exampleModal" data-toggle="modal">Send Email</button>
+        </form>
     </div>
 
-    <!-- END OF GALLERY CONTENT -->
+    <!-- end of contact -->
 
-    <!-- START OF CONTACT FORM -->
-
-    <div class="pt-5 container" id="contact-form">
-
-        <h4 class="text-center text-main p-2 mt-3 text-white ">Don't be a stranger</h4>
-        <h1 class="text-uppercase text-center text-main display-4 m-3 text-white ">Contact Me</h1>
-
-        <div class="text-white row justify-content-center ">
-            <div class="col-md-6 my-3 px-5 col-sm-1">
-
-                <form class="needs-validation " novalidate>
-                    <div class="form-group ">
-                        <label for="validation-name ">Full Name</label>
-                        <input type="text " class="form-control " id="yourName " placeholder="Juan Dela Cruz " required>
-                        <div class="invalid-feedback ">
-                            Please enter your Name
-                        </div>
-                    </div>
-
-                    <div class="form-group ">
-                        <label for="exampleFormControlInput1 ">Email address</label>
-                        <input type="email " class="form-control " id="exampleFormControlInput1 " placeholder="yourEmail@example.com " required>
-
-                        <div class="invalid-feedback ">
-                            Please enter your email
-                        </div>
-                    </div>
-
-                    <div class="form-group ">
-                        <label for="exampleFormControlInput1 ">Contact No</label>
-                        <input type="number" class="form-control " id="exampleFormControlInput1 " placeholder="+(63) 905 111 3322 " required>
-                        <div class="invalid-feedback ">
-                            Please enter your contact no
-                        </div>
-                    </div>
-
-                    <div>
-                        <div class="form-group ">
-                            <label for="exampleFormControlTextarea1 ">Message</label>
-                            <textarea class="form-control " id="exampleFormControlTextarea1 " rows="5 "></textarea>
-                        </div>
-                    </div>
-
-                    <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" id="submit">
-                        Submit
-                    </button>
-
-                </form>
+    <!-- start of footer -->
+    <footer>
+        <div class="text-white p-3 d-flex justify-content-center align-items-center flex-row" id="footer-id">
+            <div class="ml-5 mr-3">
+                <a href="https://www.facebook.com/chano.manimtim/" target="_blank"> <i class="fa-brands fa-facebook-square fa-2xl"></i></a>
+            </div>
+            <div class="mr-3">
+                <a href="https://www.linkedin.com/in/christian-manimtim-9225a6139/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl "></i></a>
+            </div>
+            <div>
+                <a href="https://gitlab.com/chanomanimtim" target="_blank"><i class="fa-brands fa-gitlab fa-2xl "></i></a>
             </div>
         </div>
-        <!-- Button trigger modal -->
+    </footer>
 
-
-        <!-- Modal -->
-
-        <div class="modal fade text-dark" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Well done!</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                        Thanks for reaching me out. I'll be in touch with you soon.
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- <div class="col-md-6 my-4 px-5 col-sm-1 ">
-                <iframe width="600 " height="500 " id="gmap_canvas " src="https://maps.google.com/maps?q=Canlubang,%20Calamba&t=&z=13&ie=UTF8&iwloc=&output=embed " frameborder="0 " scrolling="no " marginheight="0 " marginwidth="0 "></iframe>
-            </div>
-        </div>
-        </div> -->
-
-
-    <!-- Javascript Validation  -->
-    <script>
-        // Example starter JavaScript for disabling form submissions if there are invalid fields
-        (function() {
-            'use strict';
-            window.addEventListener('load', function() {
-                // Fetch all the forms we want to apply custom Bootstrap validation styles to
-                var forms = document.getElementsByClassName('needs-validation');
-                // Loop over them and prevent submission
-                var validation = Array.prototype.filter.call(forms, function(form) {
-                    form.addEventListener('submit', function(event) {
-                        if (form.checkValidity() === false) {
-                            event.preventDefault();
-                            event.stopPropagation();
-                        }
-                        form.classList.add('was-validated');
-                    }, false);
-                });
-            }, false);
-        })();
-    </script>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js " integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF " crossorigin="anonymous "></script>
-
-
 </body>
-
-<!-- <img src="images/james-harrison-vpOeXr5wmR4-unsplash.jpg " class="img-fluid "></img> -->
 
 </html>
