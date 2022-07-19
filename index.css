@@ -132,7 +132,7 @@ ul li.active a {
 
 @media (max-width: 600px) {
     #gallery-id {
-        margin-top: 30rem;
+        margin-top: 40rem;
         padding-top: 10rem;
         width: 100%;
     }
