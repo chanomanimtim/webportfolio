@@ -88,6 +88,55 @@ ul li.active a {
 
 /* gallery */
 
+/* Skills Card Styling */
+#gallery-id .card {
+    max-width: 16rem; /* Sets a smaller width for the cards */
+    padding: 8px; /* Reduces padding around card content */
+    margin: 0.5rem; /* Adjusts spacing between cards */
+}
+
+#gallery-id .card-body {
+    padding: 10px; /* Tightens the inner card padding */
+}
+
+#gallery-id .card img {
+    max-height: 80px; /* Shrinks the image size */
+    width: auto;
+    margin-bottom: 10px;
+}
+
+#gallery-id .card-title {
+    font-size: 1.2rem; /* Reduces title size */
+}
+
+#gallery-id .card-subtitle {
+    font-size: 0.9rem; /* Reduces subtitle size */
+}
+
+#gallery-id .card-text {
+    font-size: 0.85rem; /* Makes the description text more compact */
+}
+
+/* Media Queries for Small Screens */
+@media (max-width: 768px) {
+    #gallery-id .card {
+        max-width: 12rem; /* Further reduces card width on smaller screens */
+    }
+
+    #gallery-id .card-title {
+        font-size: 1rem; /* Adjusts title size for small screens */
+    }
+
+    #gallery-id .card-subtitle {
+        font-size: 0.8rem; /* Adjusts subtitle size */
+    }
+
+    #gallery-id .card-text {
+        font-size: 0.75rem; /* Further reduces text size */
+    }
+}
+
+
 #gallery {
     height: 100vh;
 }
@@ -100,6 +149,78 @@ ul li.active a {
     background-color: #14213D;
 }
 
+/* Optional styling for carousel cards */
+.carousel-item .card {
+    max-width: 18rem; /* Set a fixed width for carousel cards */
+    margin: 0 auto;
+}
+
+/* Center the carousel container and adjust the max width */
+#skillsCarousel {
+    max-width: 400px;
+    max-height: 600px;
+    margin: auto;
+}
+
+/* Custom card styling for a better fit */
+
+.card-custom .card-title, .card-custom .card-subtitle, .card-custom .card-text {
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* Center the carousel and set a wider max width */
+#skillsCarousel {
+    max-width: 500px;
+    margin: auto;
+}
+
+/* Style for the custom card within the carousel */
+.card-custom {
+    max-width: 100%;
+    height: auto; /* Allow the card to expand as needed */
+    margin: auto;
+    background-color: #14213D; /* Dark background for consistent theme */
+    color: white; /* White text for readability */
+    /* border: 1px solid #FCA311; */
+    padding: 10px; /* Padding for a cleaner layout */
+}
+
+/* Image styling within card */
+.card-custom .card-img-top {
+    max-height: 120px; /* Set a consistent max height */
+    width: auto; /* Maintain aspect ratio */
+    margin: 0 auto; /* Center the image */
+    display: block; /* Ensure the image is treated as a block element */
+    object-fit: contain; /* Ensure the image fits within the height */
+    border-radius: 8px; /* Add rounded corners for aesthetics */
+}
+
+/* Title, subtitle, and description text adjustments */
+.card-custom .card-title {
+    font-size: 1.15rem;
+    color: #FCA311; /* Accent color for title */
+}
+
+/* Ensuring the card body has consistent spacing */
+.card-custom .card-body {
+    display: flex; /* Use flexbox to center content */
+    flex-direction: column; /* Align items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text */
+    height: 100%; /* Allow the body to take full height */
+}
+
+.card-custom .card-text {
+    font-size: 0.85rem;
+    margin-top: 10px;
+}
+
+#skillsCarousel {
+    max-width: 500px;
+    margin: auto;
+}
 
 /* form */
 
