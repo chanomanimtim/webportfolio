@@ -90,9 +90,10 @@ ul li.active a {
 
 /* Skills Card Styling */
 #gallery-id .card {
-    max-width: 16rem; /* Sets a smaller width for the cards */
-    padding: 8px; /* Reduces padding around card content */
-    margin: 0.5rem; /* Adjusts spacing between cards */
+    width: 16rem; /* Fixed width for all cards */
+    height: 22rem; /* Fixed height for all cards */
+    padding: 8px;
+    margin: 15px;
 }
 
 #gallery-id .card-body {
@@ -100,9 +101,11 @@ ul li.active a {
 }
 
 #gallery-id .card img {
-    max-height: 80px; /* Shrinks the image size */
-    width: auto;
+    width: 100px; /* Set a consistent width */
+    height: 100px; /* Set a consistent height */
+    object-fit: cover; /* Ensures the image covers the specified dimensions */
     margin-bottom: 10px;
+    border-radius: 8px; /* Optional: for rounded corners */
 }
 
 #gallery-id .card-title {
@@ -153,6 +156,7 @@ ul li.active a {
 .carousel-item .card {
     max-width: 18rem; /* Set a fixed width for carousel cards */
     margin: 0 auto;
+    background-color: #14213D;
 }
 
 /* Center the carousel container and adjust the max width */
@@ -177,14 +181,12 @@ ul li.active a {
 
 /* Style for the custom card within the carousel */
 .card-custom {
-    max-width: 100%;
-    height: auto; /* Allow the card to expand as needed */
-    margin: auto;
-    background-color: #14213D; /* Dark background for consistent theme */
-    color: white; /* White text for readability */
-    /* border: 1px solid #FCA311; */
-    padding: 10px; /* Padding for a cleaner layout */
+    background-color: #14213D; /* Keep the background color consistent */
+    color: white; /* Text color */
+    margin-bottom: 1rem; /* Adds space between cards */
+    margin: 5px;
 }
+
 
 /* Image styling within card */
 .card-custom .card-img-top {
@@ -204,6 +206,7 @@ ul li.active a {
 
 /* Ensuring the card body has consistent spacing */
 .card-custom .card-body {
+    background-color: #14213D;
     display: flex; /* Use flexbox to center content */
     flex-direction: column; /* Align items vertically */
     justify-content: center; /* Center items vertically */
@@ -230,6 +233,21 @@ ul li.active a {
 
 #contact-elements {
     background-color: #14213D;
+}
+
+/* Notification styling */
+#notification {
+    display: none;
+    position: fixed;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust position to center */
+    background-color: #28a745; /* Green background */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 1000;
+    transition: opacity 0.5s ease;
 }
 
 
